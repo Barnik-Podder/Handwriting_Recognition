@@ -77,12 +77,6 @@ Then open your browser to `http://localhost:5173`.
 
 ---
 
-## 📸 Screenshots
-
-> *Optional: Add screenshots of the upload UI and prediction result here.*
-
----
-
 ## 📦 Backend API
 
 ### Endpoint: `POST /predict`
@@ -112,5 +106,4 @@ Ensure `vocab.txt` in the backend `models/` folder **matches the vocabulary used
 MIT License
 
 ---
-Made with ❤️ by Barnik Podder
-```
+Made with ❤️ by [Barnik Podder](https://github.com/Barnik-Podder)
