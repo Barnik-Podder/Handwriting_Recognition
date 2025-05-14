@@ -3,10 +3,12 @@ from app.services.model_handler import load_handwriting_model, predict_sentence
 
 predict_bp = Blueprint("predict", __name__)
 
+model = load_handwriting_model()
+
+
 @predict_bp.route("/predict", methods=["POST"])
 def predict():
     file = request.files.get("image")
-    model = load_handwriting_model()
     if not file:
         return jsonify({"error": "No image uploaded"}), 400
 
